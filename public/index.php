@@ -9,7 +9,7 @@ $item = new Item($db);
 $stmt = $item->read();
 ?>
 
-<h2 class="mb-3">Lista de Itens</h2>
+<h2 class="mb-3">Cadastro de Itens</h2>
 
 <a href="criar.php" class="btn btn-primary mb-3">+ Novo Item</a>
 
