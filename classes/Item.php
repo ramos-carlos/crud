@@ -21,7 +21,7 @@ class Item {
         return $stmt;
     }
 
-    // Criar
+    // Cadastro
     public function create() {
         $query = "INSERT INTO {$this->table} (nome, descricao, preco) VALUES (:nome, :descricao, :preco)";
         $stmt = $this->conn->prepare($query);

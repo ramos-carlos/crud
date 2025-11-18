@@ -1,15 +1,40 @@
-  body.light {
-        background-color: #ffffff;
-        color: #000000;
-    }
+body { transition: background-color .25s, color .25s; }
+        body.light { background: #fff; color:#000; }
+        body.dark  { background:#121212; color:#fff; }
+        .card.dark { background:#1f1f1f; color:#fff; }
+        .navbar.light { background:#f8f9fa; }
+        .navbar.dark  { background:#1f1f1f; }
 
-    body.dark {
-        background-color: #121212;
-        color: #ffffff;
-    }
+        /* Tabela no modo dark */
+        body.dark table {
+        background-color: #1f1f1f !important;
+        color: #fff !important;
+        }
 
-    /* exemplo para cards, tabelas, etc */
-    .card.dark {
+        body.dark table th,
+        body.dark table td {
+        background-color: #1f1f1f !important;
+        color: #fff !important;
+        border-color: #444 !important;
+        }
+
+        body.dark .table-hover tbody tr:hover td {
+        background-color: #2a2a2a !important;
+        }
+
+        body.dark .card {
         background-color: #1f1f1f;
-        color: #ffffff;
-    }
+        color: #fff;
+        }
+
+        body.dark .btn-primary {
+        background-color: #0069d9;
+        }
+
+        body.dark .btn-warning {
+        background-color: #d39e00;
+        }
+
+        body.dark .btn-danger {
+        background-color: #c82333;
+        }
